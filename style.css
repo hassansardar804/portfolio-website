@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+}
+body{
+    background-color:rgb(0, 0, 33 );
+    color: white;
+}
+/* nav  */
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(18, 18, 62)   ;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+  
+}
+nav ul li{
+    list-style-type: none;
+    margin: 0px 23px;
+    cursor: pointer;
+}
+nav ul li:hover{
+    border-bottom: 1px solid green;
+ 
+}
+.left{
+    font-size: 1.5rem;
+}
+.main-heading{
+    margin-top: 30vh;
+    word-spacing: 3px;
+}
+
+/* hero  */
+.img > img{
+    height:70vh;
+}
+.purple{
+    color: rgb(230, 100, 226);
+    font-weight: bold;
+}
+.explain-main .explain-me{
+    font-size: 2rem;
+    font-weight: bold;
+   
+}
+#element {
+    font-size: 2rem; 
+    font-family: 'Arial', sans-serif; 
+    color:rgb(230, 100, 226) ;
+}
+
+/* experiences  */
+.experiences{
+    height: 80vh;
+}
+.box{
+    border: 2px solid  white;
+}
