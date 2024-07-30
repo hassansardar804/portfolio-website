@@ -1,65 +1,491 @@
-*{
-    margin: 0;
-    padding: 0;
-    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 }
-body{
-    background-color:rgb(0, 0, 33 );
-    color: white;
+
+body {
+  background-color: rgb(0, 0, 33);
+  color: white;
 }
+
 /* nav  */
-nav{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 80px;
-    background-color: rgb(18, 18, 62)   ;
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  background-color: rgb(18, 18, 62);
 }
-nav ul{
-    display: flex;
-    justify-content: center;
-  
+
+nav ul {
+  display: flex;
+  justify-content: center;
+
 }
-nav ul li{
-    list-style-type: none;
-    margin: 0px 23px;
-    cursor: pointer;
+
+nav ul li {
+  list-style-type: none;
+  margin: 0px 23px;
+  cursor: pointer;
 }
-nav ul li:hover{
-    border-bottom: 1px solid green;
- 
+
+nav ul li:hover {
+  border-bottom: 1px solid green;
+
 }
-.left{
-    font-size: 1.5rem;
+
+.left {
+  font-size: 1.5rem;
 }
-.main-heading{
-    margin-top: 30vh;
-    word-spacing: 3px;
+
+.main-heading {
+  margin-top: 30vh;
+  word-spacing: 3px;
 }
 
 /* hero  */
-.img > img{
-    height:70vh;
-}
-.purple{
-    color: rgb(230, 100, 226);
-    font-weight: bold;
-}
-.explain-main .explain-me{
-    font-size: 2rem;
-    font-weight: bold;
-   
-}
-#element {
-    font-size: 2rem; 
-    font-family: 'Arial', sans-serif; 
-    color:rgb(230, 100, 226) ;
+.img>img {
+  height: 70vh;
 }
 
-/* experiences  */
-.experiences{
-    height: 80vh;
+.purple {
+  color: rgb(230, 100, 226);
+  font-weight: bold;
 }
-.box{
-    border: 2px solid  white;
+
+.purple-1 {
+  background: linear-gradient(45deg, #8e44ad, #c0392b);
+  transition: background 0.5s ease;
+  color: white;
+  font-weight: bold;
+  margin-left: 150px;
+}
+
+.purple-1:hover {
+  background: linear-gradient(45deg, #c0392b, #8e44ad);
+}
+
+.explain-main .explain-me {
+  font-size: 2rem;
+  font-weight: bold;
+
+}
+
+#element {
+  font-size: 2rem;
+  font-family: 'Arial', sans-serif;
+  color: rgb(230, 100, 226);
+}
+
+/* about me  */
+
+.right-about>img {
+  height: 230px;
+  margin-left: 145px;
+  margin-top: 145px;
+
+}
+
+
+/* //progree  */
+/* Progress bar styling */
+#progressBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 5px;
+  background-color: #ffffff;
+  /* Custom color */
+  z-index: 100;
+}
+
+/* Content styling */
+.content {
+  height: 2000px;
+  /* Set to a large height for demo purposes */
+  padding: 20px;
+}
+
+
+/* skills */
+
+.skill {
+  margin-top: 50px;
+}
+
+.skill-1 {
+  border-top: 2px solid #8e44ad;
+  border-right: 2px solid #8e44ad;
+}
+
+.skill-1>img {
+  height: 200px;
+
+}
+
+
+.counter {
+  font-size: 3rem;
+  font-weight: bold;
+  transition: width 3s ease-out;
+}
+
+
+.skill-2 {
+  border-top: 2px solid #8e44ad;
+  border-right: 2px solid #8e44ad;
+}
+
+.skill-2>img {
+  height: 200px;
+
+}
+
+.skill-3 {
+  border-top: 2px solid #8e44ad;
+  border-right: 2px solid #8e44ad;
+}
+
+.skill-3>img {
+  height: 200px;
+
+}
+
+.skill-4 {
+  border-top: 2px solid #8e44ad;
+}
+
+.skill-4>img {
+  height: 200px;
+
+}
+
+
+.section {
+  height: 100vh;
+  /* Adjust as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  position: relative;
+}
+
+
+#section3 {
+  display: none;
+}
+
+.counter {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 18px;
+}
+
+/* experties */
+.box-1 {
+  margin-top: 50px;
+  background-color: #8e44ad;
+  height: 170px;
+  width: 100%;
+  border-radius: 15px;
+  position: relative;
+}
+
+.box-2 {
+
+  margin-top: 50px;
+  background-color: #8e44ad;
+  height: 170px;
+  width: 100%;
+  border-radius: 15px;
+  position: relative;
+
+}
+
+.box3 {
+  margin-top: 50px;
+  background-color: #8e44ad;
+  height: 170px;
+  width: 100%;
+  border-radius: 15px;
+  position: relative;
+
+}
+
+.box4 {
+  margin-top: 50px;
+  background-color: #8e44ad;
+  height: 170px;
+  width: 100%;
+  border-radius: 15px;
+  position: relative;
+
+}
+
+.second-box>img {
+
+  height: 180px;
+  margin-left: 150px;
+}
+
+/* round progress */
+
+
+.next-btn-1 {
+  background: linear-gradient(45deg, #c0392b, #8e44ad);
+  color: rgb(0, 0, 0);
+  border: none;
+  margin-left: 150px;
+  margin-top: 20px;
+  position: absolute;
+}
+
+.next-btn-2 {
+  background: linear-gradient(45deg, #c0392b, #8e44ad);
+  color: rgb(0, 0, 0);
+  border: none;
+  margin-left: 470px;
+  margin-top: 20px;
+  position: absolute;
+}
+
+.next-btn-3 {
+  background: linear-gradient(45deg, #c0392b, #8e44ad);
+  color: rgb(0, 0, 0);
+  border: none;
+  margin-left: 470px;
+  margin-top: 20px;
+  position: absolute;
+}
+
+.next-btn4 {
+  background: linear-gradient(45deg, #c0392b, #8e44ad);
+  color: rgb(0, 0, 0);
+  border: none;
+
+  margin-left: 470px;
+  margin-top: 20px;
+  position: absolute;
+}
+
+.img2 {
+  height: 180px;
+  position: absolute;
+  margin-left: 150px;
+  padding-bottom: 15px;
+}
+
+.img3 {
+  height: 180px;
+  position: absolute;
+  margin-left: 150px;
+  padding-bottom: 15px;
+}
+
+.img4 {
+  height: 180px;
+  position: absolute;
+  margin-left: 150px;
+  padding-bottom: 10px;
+
+}
+
+/* chat box */
+
+.content {
+  padding: 20px;
+}
+
+.chatbox {
+  position: fixed;
+  bottom: 70px;
+  right: 10px;
+  width: 300px;
+  max-height: 400px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  background-color: white;
+  overflow: hidden;
+}
+
+.chat-header {
+  padding: 10px;
+  background-color: #007BFF;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chat-content {
+  padding: 10px;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.chat-message {
+  margin-bottom: 10px;
+}
+
+.predefined-questions ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.predefined-questions li {
+  padding: 8px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.predefined-questions li:hover {
+  background-color: #e0e0e0;
+}
+
+.chat-button {
+  background-color: #510222;
+  color: white;
+  border: none;
+
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.chat-button:hover {
+  background-color: #b30062;
+}
+
+#openChat {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  /* border-radius: 50%; */
+  /* width: 50px;
+  height: 50px; */
+  /* display: flex; */
+  margin-bottom: 150px;
+  /* justify-content: center;
+  align-items: center; */
+  font-size: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+
+/* footer  */
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  max-width: 300px;
+  margin: 10px;
+}
+
+.footer-section h3 {
+  margin-bottom: 10px;
+}
+
+.footer-section p, .footer-section ul, .footer-section a {
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 5px;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.social-links a {
+  margin: 0 10px;
+}
+
+.social-links img {
+  width: 24px;
+  height: 24px;
+}
+
+
+
+
+
+
+
+
+
+
+/* Progress bar styling */
+#progressBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 5px;
+  background-color: #ffffff;
+  /* Custom color */
+  z-index: 100;
+}
+
+/* Content styling */
+.content {
+  height: 2000px;
+  /* Set to a large height for demo purposes */
+  padding: 20px;
+}
+
+/* Scroll to Top Button styling */
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ffffff;
+  /* Custom color */
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  display: none;
+  /* Initially hidden */
+}
+
+#scrollToTopBtn:hover {
+  background-color: #bcc3ed;
+  /* Darker shade on hover */
 }
