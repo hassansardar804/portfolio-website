@@ -1,7 +1,7 @@
 
 // header 
 var typed = new Typed('#element', {
-  strings: ['<i>Web </i> Developer', '<i>Mern </> Stack Developer', '&amp; Cyber Expert...'],
+  strings: ['<i>Web </i> Developer', '<i>Mern </> Stack Developer'],
   typeSpeed: 60,
   loop: true,
   backSpeed: 40,
@@ -25,7 +25,7 @@ function updateProgressBar() {
 }
 
 //skills
-// Select the progress bar and button elements
+
 var progressBar = document.getElementById('progressBar');
 var scrollToTopBtn = document.getElementById('scrollToTopBtn');
 
@@ -43,7 +43,7 @@ function updateProgressBar() {
 }
 
 function toggleScrollToTopBtn() {
-  if (document.documentElement.scrollTop > 300) { // Show button after 300px scroll
+  if (document.documentElement.scrollTop > 300) { 
     scrollToTopBtn.style.display = "block";
   } else {
     scrollToTopBtn.style.display = "none";
