@@ -108,9 +108,15 @@ nav ul li a:hover {
   background-repeat: no-repeat;
   background-position: bottom;
 }
+.muslim {
+  background: url(./Gallery/muslim.jpeg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+ 
+}
 
 .ticer {
-  background: url(./Gallery//ticer-removebg-preview.png);
+  background: url(./Gallery/ticer.png);
   background-repeat: no-repeat;
   background-position: bottom;
 }
